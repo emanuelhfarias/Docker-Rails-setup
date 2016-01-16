@@ -23,6 +23,7 @@ It generate four containers:
 * [New Rails Project](#new-rails-project)
 * [Existing Rails Project](#existing-rails-project)
 * [Tips](#tips)
+* [References](#references)
 
 ### New Rails Project
 To use this repo in a new rails project, first clone:
@@ -156,3 +157,17 @@ The tip is: rename the old and avoid `<none>` images after run build.
 ```sh
 $ docker tag <none_id> app_web:<version>
 ```
+
+
+### References
+* Bundle container
+  * http://bradgessler.com/articles/docker-bundler/
+  * http://www.atlashealth.com/blog/2014/09/persistent-ruby-gems-docker-container/#.VpmxmSCrS00
+
+* Bundle vendor/cache (alternative solution)
+  * http://simonrobson.net/2014/10/14/private-git-repos-on-docker-images.html
+  * https://viget.com/extend/bundler-best-practices
+
+* Util
+  * https://forums.docker.com/t/swiching-between-root-and-non-root-users-from-interactive-console/2269
+  * https://docs.docker.com/compose/rails/

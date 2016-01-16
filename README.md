@@ -93,7 +93,7 @@ That's it. Go to `localhost:3000` and check it again.
 
 
 ### Existing Rails Project
-First clone:
+To use this repo in an existing project, first clone:
 ```sh
 $ git clone https://github.com/emanuelhfarias/Docker-Rails-setup.git
 ```

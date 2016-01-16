@@ -3,7 +3,7 @@
 
 After weeks struggling with Rails apps + Docker and having trouble with
 Dockefile cache + Bundler, I've found a solution (see [ref](#references)) to use Docker + Rails in
-dev enviroment with fast bundle installs by using a data-only container to stores Gems.
+dev environment with fast bundle installs by using a data-only container to stores Gems.
 
 This repo is a personal setup that solves this problem. I don't know if this is a good solution
 to use in production.

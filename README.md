@@ -56,9 +56,9 @@ Now it's time to create the rails project and the first docker image version, ru
 ```sh
 $ docker-compose run web rails new . --force --database=postgresql --skip-bundle
 ```
-Now, your new project has been created.
+Your new project has been created.
 
-After this, discomment in the Gemfile: `gem 'therubyracer', platforms: :ruby`
+Uncomment in the Gemfile: `gem 'therubyracer', platforms: :ruby`
 Now that we've changed the app's dependencies, lets build the image again:
 ```sh
 $ docker-compose build

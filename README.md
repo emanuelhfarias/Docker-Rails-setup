@@ -82,7 +82,7 @@ If something goes wrong with `database connection` you'll need to search for the
 ```sh
 $ docker exec -it <running_web_container_name> env
 ```
-PS: To run `docker exec` the web container must be running.
+PS: To run `docker exec` the web container must be running. If web container is exiting automatically, try to inspect environment variables using `docker run -it --rm <web_image_name> env`.
 Look up for the right environment varible and change in the config/database.yml.
 
 After database connection established, create db and run migrations:
@@ -131,7 +131,7 @@ If something goes wrong with `database connection` you'll need to search for the
 ```sh
 $ docker exec -it <running_web_container_name> env
 ```
-PS: To run `docker exec` the web container must be running.
+PS: To run `docker exec` the web container must be running. If web container is exiting automatically, try to inspect environment variables using `docker run -it --rm <web_image_name> env`.
 Look up for the right environment varible and change in the config/database.yml.
 
 After database connection established, create db and run migrations:

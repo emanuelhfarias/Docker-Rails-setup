@@ -26,6 +26,6 @@ data:
     - /var/lib/postgresql/data
 
 bundle:
-  image: appname_web
+  build: .
   volumes:
     - /bundle

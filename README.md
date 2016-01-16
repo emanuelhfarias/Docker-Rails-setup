@@ -168,9 +168,9 @@ $ docker exec <running_web_container_name> rails g scaffold post title:string bo
 ```
 
 Before deploy in production, rebuild the image `$ docker-compose build`.
-This command will copy the 'old latest' image and rename it to <none>.
+This command will copy the 'old latest' image and rename it to `<none>`.
 The new image will be the appname_web:latest.
-The tip is: rename the old and avoid `<none>` images after run build.
+The tip is: rename the old images after rebuild to and avoid `<none>`
 ```sh
 $ docker tag <none_id> app_web:<version>
 ```

@@ -2,7 +2,7 @@
 
 
 After weeks struggling to running Rails apps + Docker and having trouble with
-Dockefile cache + Bundler, I've found a solution (see ref) to use Docker + Rails in
+Dockefile cache + Bundler, I've found a solution (see [ref](#references)) to use Docker + Rails in
 dev enviroment with fast bundle installs by using a data-only container to stores Gems.
 
 This repo is a personal setup that solves this problem. I don't know if this is a good solution
@@ -170,7 +170,7 @@ $ docker exec <running_web_container_name> rails g scaffold post title:string bo
 Before deploy in production, rebuild the image `$ docker-compose build`.
 This command will copy the 'old latest' image and rename it to `<none>`.
 The new image will be the appname_web:latest.
-The tip is: rename the old images after rebuild to and avoid `<none>`
+The tip is: rename the old images after rebuild to and avoid `<none>`.
 ```sh
 $ docker tag <none_id> app_web:<version>
 ```

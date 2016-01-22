@@ -8,11 +8,11 @@ dev environment with fast bundle installs by using a data-only container to stor
 This repo is a personal setup that solves this problem. I don't know if this is a good solution
 to use in production.
 
-These scripts provision this environment:
+These scripts are provisioning the following environment:
   - Rails
   - Postgres
 
-It generate four containers:
+It generates four containers:
   - web - Rails + WEBrick
   - postgres - Only the postgres daemon, data is store in data-only container
   - data - Stores postgres data

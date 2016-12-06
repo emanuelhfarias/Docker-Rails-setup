@@ -73,6 +73,9 @@ In config/database.yml:
   host: db
 ```
 
+Create the volume in the host to store the database: `sudo mkdir -p /var/lib/postgresql/data`.
+Give SELinux permission to Docker expose the database volume: `sudo chcon -Rt svirt_sandbox_file_t /var/lib/postgresql/data`.
+
 Lets spawn the containers: `docker-compose up`.
 Four containers will be created. You can check them with `docker ps -a`.
 Two containers should be `UP` and two `Exited`. The Exited containers are data-only.

@@ -41,7 +41,7 @@ $ cp Dockerfile docker-compose.yml /your/app/home/folder/
 Change to the app folder, then create the Gemfile only with rails gem:
 ```sh
   source 'https://rubygems.org'
-  gem 'rails', '4.2.5'
+  gem 'rails', '5.0.0.1'
 ```
 
 Create the Gemfile.lock: `touch Gemfile.lock`

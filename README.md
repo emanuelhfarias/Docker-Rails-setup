@@ -1,6 +1,16 @@
 ### A Docker + Rails dev setup optimized for fast bundle
 
 
+### 2020 update
+
+See this repos, probably a better aproach:
+```
+https://github.com/ledermann/docker-rails-base
+https://github.com/ledermann/docker-rails
+```
+
+### ...
+
 After weeks struggling with Rails apps + Docker and having trouble with
 Dockefile cache + Bundler, I've found a solution (see [ref](#references)) to use Docker + Rails in
 dev environment with fast bundle installs by using a data-only container to stores Gems.
